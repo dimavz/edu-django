@@ -3,5 +3,4 @@
 .pydevproject
 .settings
 .idea*
-/mysite/local_settings.py
-*~
+mysite/local_settings.py
