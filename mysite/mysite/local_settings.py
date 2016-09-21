@@ -7,7 +7,7 @@ DATABASES = {
         'NAME': 'mysite_django',
         'USER': 'postgres',
         'PASSWORD': 'matrix',
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

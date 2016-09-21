@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/dmitry/git_repositories/edu-django-git/edu-django"
+VIRTUAL_ENV="/home/dmitry/PycharmProjects/edu-django"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
