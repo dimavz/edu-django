@@ -4,5 +4,16 @@ from django.contrib import admin
 
 from .models import Question, Choice
 
-admin.site.register(Question)
-admin.site.register(Choice)
+class ChoiseInline(admin.StackedInline):
+    model = Choice
+    extra =2
+
+class QuestionAdmin(admin.ModelAdmin):
+    fields = ['question_text','pub_date']
+    inlines = [ChoiseInline]
+    list_filter = ['pub_date']
+
+
+
+admin.site.register(Question, QuestionAdmin)
+#admin.site.register(Choice)
